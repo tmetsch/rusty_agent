@@ -1,0 +1,12 @@
+[package]
+name = "rusty_agent"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "~0.3"
+zmq = "~0.9"
+
+[[example]]
+name = "sample_agent"
+path = "examples/sample_agent.rs"
