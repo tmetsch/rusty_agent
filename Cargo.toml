@@ -1,9 +1,13 @@
 [package]
 name = "rusty_agent"
+version = "0.1.1"
+authors = ["tmetsch"]
+edition = "2021"
 description = "multi-agent systems framework."
 license-file = "LICENSE"
-version = "0.1.0"
-edition = "2021"
+repository = "https://github.com/tmetsch/rusty_agent/"
+categories = ["algorithms", "science"]
+keywords = ["multi-agent", "agent", "distributed-systems"]
 
 [dependencies]
 futures = "~0.3"
