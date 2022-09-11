@@ -1,5 +1,7 @@
 [package]
 name = "rusty_agent"
+description = "multi-agent systems framework."
+license-file = "LICENSE"
 version = "0.1.0"
 edition = "2021"
 
