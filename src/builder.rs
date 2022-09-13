@@ -67,8 +67,8 @@ impl AgentBuilder {
 
 #[cfg(test)]
 mod tests {
-    use crate::agent::ZeroAgent;
     use super::*;
+    use crate::agent::ZeroAgent;
 
     // Test for success.
 
@@ -79,21 +79,28 @@ mod tests {
 
     #[test]
     fn test_timeout_for_success() {
-        AgentBuilder::new("inproc://#0".to_string()).timeout(10).build();
+        AgentBuilder::new("inproc://#0".to_string())
+            .timeout(10)
+            .build();
     }
 
     #[test]
     fn test_wait_for_success() {
-        AgentBuilder::new("inproc://#0".to_string()).wait(10).build();
+        AgentBuilder::new("inproc://#0".to_string())
+            .wait(10)
+            .build();
     }
 
     // Test for failure.
 
     // Test for sanity.
 
-        #[test]
+    #[test]
     fn test_build_for_sanity() {
-        let agent: ZeroAgent = AgentBuilder::new("inproc://#0".to_string()).timeout(1).wait(2).build();
+        let agent: ZeroAgent = AgentBuilder::new("inproc://#0".to_string())
+            .timeout(1)
+            .wait(2)
+            .build();
         assert_eq!(agent.timeout, 1);
         assert_eq!(agent.wait, 2);
     }

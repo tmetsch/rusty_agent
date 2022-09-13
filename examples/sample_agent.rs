@@ -1,6 +1,6 @@
 use std::env;
-use std::time;
 use std::thread;
+use std::time;
 
 use rusty_agent::agent;
 use rusty_agent::agent::Agent;
