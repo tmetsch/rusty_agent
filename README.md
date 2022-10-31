@@ -15,10 +15,14 @@ neighbours it knows about to the other agents.
 An example is provided - first start the first agent, it will broadcast a hello world to its neighbours. It will wait 
 till other agents have joined the system-of-systems:
 
-    $ cargo run --example sample_agent 0
+```bash
+$ cargo run --example sample_agent 0
+```
 
 The program parameter "0" indicates the id of the agent, as well as the port it will use.
 
 Now another agent can be started - which will connect to the previous one, wait for the "hello world" and stop:
 
-    $ cargo run --example sample_agent 1
+```bash
+$ cargo run --example sample_agent 1
+```
